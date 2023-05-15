@@ -1,0 +1,11 @@
+default case in java
+
+Following are things to remember about the default case in java.
+
+● Switch statement can have only 1 default statement at most
+
+● The default case can be anywhere in order with other case labels, but
+it's a good practice and always recommended to write it as a last
+statement.
+
+● If there is no matching case, only then default case is executed

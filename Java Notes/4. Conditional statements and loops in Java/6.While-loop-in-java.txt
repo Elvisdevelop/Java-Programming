@@ -1,0 +1,14 @@
+While loop in java
+
+Loops are helpful if you want a computer to do tasks for a certain number of times or until a condition is met. 
+Following are the different types of loop in java :
+
+● While loop
+● Do while loop
+● For loop
+
+Syntax for while loop :
+
+while(condition){
+//code to be executed until the condition is met
+}

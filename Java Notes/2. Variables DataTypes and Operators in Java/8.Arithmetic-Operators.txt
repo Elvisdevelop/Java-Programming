@@ -1,0 +1,30 @@
+Arithmetic Operators in Java
+
+Types of operators
+● Arithmetic operators
++ - * / % ++ --
+
+● Relational operators
+== != > < >= <=
+
+● Logical operators
+&& || !
+
+● Assignment operators
+= += -= *= /= %=
+
+● Conditional operators
+?:
+
+All operators perform operations on operands. For example, if we are performing addition operation like (a + b), here a and b are operands and + is the operator.   
+Arithmetic operators
+● Addition (+) : used to perform addition on two operands
+● Subtraction (-) : used to perform subtraction on two
+operands
+● Multiplication (*) : used to perform multiplication on two
+operands
+● Division (/) : used to perform multiplication on two operands
+● Modulus (%) : prints the remainder of the operation after
+performing division
+● Increment (++) : increments the value by 1.
+● Decrement (--) : decrements the value by 1

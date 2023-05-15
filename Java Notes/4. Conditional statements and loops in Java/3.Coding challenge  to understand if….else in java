@@ -1,0 +1,36 @@
+write a java software for banks, which will allow users above 21 years of age to sign up and create an account. if the user is below 21 years of age don't allow them to create an account.
+
+if user is above 21 years of age -> print "Eligible"
+if user is below 21 years of age -> print "Ineligible"
+
+inputs
+
+sample input 1
+18
+
+sample output 1
+Ineligible
+
+sample input 2
+25
+
+sample output 2
+Eligible
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main (String[] args){
+        System.out.println("Please enter your age: ");
+
+        Scanner scanner = new Scanner(System.in);
+
+        int age = scanner.nextInt();
+
+        if (age > 21){
+            System.out.println("Eligible");
+        } else if (age < 21){
+            System.out.println("Inligible");
+        }
+    }
+}

@@ -1,0 +1,107 @@
+Facts about do while loop in java
+
+Curly braces are optional and without curly braces we can only take one statement between do and while which should not be declarative statements
+Example :
+
+do
+    System.out.println("Hello);
+while(true);
+
+Let’s see whether the following statements are valid or invalid?
+
+Example 1
+do{
+    System.out.println("Hello");
+}while(true);
+System.out.println("Hi");
+
+Compile time error : Unreachable statement
+Reason : Since System.out.println(“Hi”); is not reachable
+
+Example 2
+
+int a = 10, b = 20;
+do{
+    System.out.println("Hello");
+}while(a<b);
+System.out.println("Hi");
+This is a valid program
+Output → 
+Hello
+Hi
+
+Example 3
+
+int a = 10, b = 20;
+do{
+    System.out.println("Hello");
+}while(a>b);
+System.out.println("Hi");
+This is valid java program
+Output →
+Hello
+Hello
+(infinite times)
+
+Example 4
+final int a = 10, b = 20;
+do{
+    System.out.println("Hello");
+}while(a<b);
+System.out.println("Hi");
+
+Compile time error : Unreachable statement
+Reason : Since sop(“Hi”); is not reachable
+
+Example 5
+final int a = 10, b = 20;
+do{
+    System.out.println("Hello");
+}while(a>b);
+System.out.println("Hi");
+This is a valid program
+Output →
+Hello
+Hi
+do
+System.out.println(“Hello”);
+
+Example 6
+while(true);
+This is a valid program
+Curly braces are optional however if curly braces are not used, do while can then have one statement at most.
+
+Example 7
+do;
+while(true);
+This is a valid java program
+
+Example 8
+do
+int x = 10;
+while(true);
+This is not a valid java program
+Within do while can have only statements at most without curly braces, it
+should not be a declarative statement. Since having declarative statements
+does not make sense as it cannot be accessed outside of do while loop
+and within do while loop there are no statements.
+
+Example 9
+
+do{
+    int x = 10;
+} while(true);
+
+This is a valid java program
+If you are using curly braces compiler will allow only declarative
+statements. Since you can add more statements since curly braces are
+used.
+
+Example 10
+do
+while(true);
+
+This program is invalid
+Do-while not having any statements is not valid. Since do while is used to
+do repetitive tasks and having do while without statements does not make
+sense.

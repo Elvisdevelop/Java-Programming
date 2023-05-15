@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class UserInput {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Strings
+        String firstString = sc.nextLine();
+        System.out.println("You entered: " + firstString)
+
+        // integers
+        int a = sc.nextInt();
+        System.out.println("You entered: " + a);
+
+        // write a program that gets the name and age of a user. Then prints out the output on the console.
+
+        System.out.println("Hello, Whats your name? ");
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        System.out.println("Hello, " + name);
+
+        System.out.println("How old are you? ");
+        int age = sc.nextInt();
+        System.out.println("You are " + age + "years old.");
+        
+    }
+}

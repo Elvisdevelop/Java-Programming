@@ -1,0 +1,16 @@
+Relational Operators in Java
+
+Relational operators are used to compare two operands and get a boolean value. 
+Output after using relational operators is always boolean because they are more of comparison type.
+
+== : this operator compares both the operands and returns true if both operands are equal to each else it will return false.
+
+!= : this operator compares both the operands and returns false if both operands are equal to each else it will return true.
+
+> : this operator compares both the operands and returns true if operand on the left hand side is greater than the value on the right hand side else it will return false.
+
+< : this operator compares both the operands and returns true if operand on the left hand side is less than the value on the right hand side else it will return false.
+
+>= : this operator compares both the operands and returns true if operand on the left hand side is greater than equal to the value on the right hand side else it will return false.
+
+<= : this operator compares both the operands and returns true if operand on the left hand side is greater than equal to the value on the left hand side else it will return false.

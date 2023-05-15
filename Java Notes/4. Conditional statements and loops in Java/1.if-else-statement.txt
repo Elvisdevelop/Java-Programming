@@ -1,0 +1,26 @@
+If...else in Java
+
+If statement
+
+You may face scenarios where you might want to execute certain block of code based on certain condition this is where if else statement comes into the picture.
+
+Syntax of if statement in java
+
+if(condition){
+// code to be executed
+}
+
+Here, the statements within the braces are executed if the condition is true, however if the condition is false the code is skipped.
+
+If...else statement
+
+There might be scenarios where you might want to execute certain code if the condition is false. 
+Now in that case, you can use if with else statement
+
+Syntax of if statement in java
+
+if(condition){
+// code to be executed
+} else {
+// code to be executed
+}

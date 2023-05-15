@@ -1,0 +1,9 @@
+Increment and decrement operators in Java
+
+Increment operators are of 2 types
+● Pre increment → value is incremented first and then assigned or used in an expression
+● Post increment → value is assigned or used in an expression first and then incremented
+
+Decrement operators are of 2 types
+● Pre decrement → value is decremented first and then assigned or used in an expression
+● Post decrement → value is assigned or used in an expression first and then decremented

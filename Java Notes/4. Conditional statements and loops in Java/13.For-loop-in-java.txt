@@ -1,0 +1,28 @@
+For statement in java
+
+Syntax:
+
+for (initialization; condition; increment/decrement)
+{
+    //statements that will execute
+}
+
+Initialization : For loop starts with executing this part, where in variable or
+counter is initialized
+
+Condition : Once the variable or counter is initialized the condition is
+evaluated. If the condition is true then statements in the loop is executed.
+
+Increment : After the statements are executed increment section is
+executed, where in value for variable or counter is either incremented or
+decremented.
+
+Infinite loop syntax
+
+for(;;){
+    //statements to be executed
+}
+
+Infinite loop runs infinitely and does not do any termination or condition
+checks. 
+Program has to be terminated abnormally to stop infinite loop.

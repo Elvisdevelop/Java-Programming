@@ -1,0 +1,28 @@
+write a do while loop that asks the user to enter two numbers.
+The numbers should be added and the sum displayed.
+After adding and printing, the loop should ask whether he or she wishes to perform the operation again.
+if so, the loop should repeat; Otherwise it should terminate.
+
+sample input -> 5 and 10;
+sample output -> 15
+
+sample input 1 -> 10 and 20;
+sample output 1 -> 30
+
+Solution:
+
+public class AddTwoNumbers{
+    public static void main (String[] args) {
+        int input = 0;  
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Please Enter The First Number: ");
+            int num1 = sc.nextInt();
+            System.out.println("Please Enter The second Number: ");
+            int num1 = sc.nextInt();
+            System.out.println("Sum: " + (a + b));
+            System.out.println("Enter 1 to Continue, to exit, enter anything else");
+            input = sc.nextInt();
+        } while (input == 1);
+    }
+}

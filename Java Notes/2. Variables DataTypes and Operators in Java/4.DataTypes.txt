@@ -1,0 +1,47 @@
+Understanding byte, short, int, long
+What are data types?
+
+Variables are nothing but containers that holds value for you in the memory
+during the course of execution of the program. 
+But how much memory to allocate is decided by data type. 
+Datatype for a variable tell java what type of values we are going to store in that variable.
+Java has predefined primitive data types which is used to store 4
+categories of values
+● Integer
+● Floating point numbers
+● Characters
+● Boolean
+To store Integers we have 4 primitive data types
+Byte, short, int, long
+
+Floating point numbers
+Double, float
+
+Character values
+Char
+
+Boolean values
+Boolean datatype
+
+Datatype    Size of value it can store  Range it can store
+byte        8 bits or 1 byte            -128 to 127
+short       16 bits or 2 bytes          -32_768 to 32_767
+int         32 bits or 4 bytes          -2_147_483_648 to 2_147_483_647
+long        64 bits or 8 bytes          -9223372036854775808L to 9223372036854775807L
+
+Enhancing readability
+
+Java allows usage of underscores (_) to enhance readability of large
+numbers. 
+Like in normal english you enhance the readability of numbers by using comma (,) like 100,000. 
+Similarly, in java
+
+int i = 100_000;
+This is a valid statement and allowed in java.
+
+You can place underscores only between digits; you cannot place
+underscores in the following places:
+● At the beginning or end of a number
+● Adjacent to a decimal point in a floating point literal
+● Prior to an F or L suffix
+● In positions where a string of digits is expected

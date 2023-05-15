@@ -1,0 +1,22 @@
+Returning value from method
+
+You can return a value from a method after performing a certain operation.
+
+Syntax
+
+modifier return-type method-name(<parameter-list>){
+//statements;
+}
+
+return-type : here defines the data type of the return value which the method is supposed to have
+
+Java offers a return keyword to return a value from within the method
+
+Syntax :
+
+return <value>;
+
+Few things to keep in mind about return statement
+
+● One method can have multiple return statement
+● If the method declaration has a return-type other than void, the method should have a return statement. Else compiler will throw an error.

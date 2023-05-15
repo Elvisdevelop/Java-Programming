@@ -1,0 +1,28 @@
+Conditional Operator OR Ternary Operator
+
+Operators in java can be classified into 3 types depending on the number of operands they operate on:-
+
+● Unary operators : are the operators which take only 1 operand. Example : ++, --
+● Binary operators : are the operators which take 2 operands. Example +, -, /
+● Ternary operators : are the operators which take 3 operands. There is only 1 ternary operator in java which is also known as the conditional operator.
+
+Ternary operator or conditional operator
+The combination of “?” and “:” is called ternary operator
+
+Syntax :
+boolean-expression ? true-expression : false-expression
+
+If the boolean expression above is evaluated to true then true expression is evaluated. If boolean expression is evaluated to false then false expression is evaluated.
+
+Example of a ternary operator in use :
+Let’s use ternary operator to find out greater of two numbers
+
+int a = 10, b = 20;
+int max = (a > b) ? a : b;
+System.out.println("Value of max : " + max);
+
+Ternary operators can also be nested.
+Example :
+
+int max = (10 > 20) ? 40 : ((50 > 60) ? 90 : 100);
+Output → 100

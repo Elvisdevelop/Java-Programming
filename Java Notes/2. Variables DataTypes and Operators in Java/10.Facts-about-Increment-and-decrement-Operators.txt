@@ -1,0 +1,5 @@
+Facts about increment and decrement operator
+● We can use increment and decrement operators only with variables, but not with constants. If we try to use increment and decrement operators with constants we will get a compile time error.
+● Nesting of increment and decrement operators is not allowed.
+● We can use increment and decrement operators with normal variables, but not with final variables. If we try to use the increment and decrement operator with the final variable we will get a compile time error.
+● We can apply increment and decrement operators for every primitive type except boolean

@@ -1,0 +1,7 @@
+write a java software for banks, which allows users above 21 years of age to sign up and create an account. if his age is above 55 years - create a senior citizen account for him and if his age is between 21 to 55 create normal savings account.  
+
+if the user is below 21 years of age don't allow them to create an account
+
+if user is > 21 years of age but < 55 -> print "Savings Account"
+if user is > 55 years of age -> print "Senior Citizen Account"
+if user is below 21 years of age -> print "Inelligible"

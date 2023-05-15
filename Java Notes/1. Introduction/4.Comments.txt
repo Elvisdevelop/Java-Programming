@@ -1,0 +1,12 @@
+What are Java Comments
+
+-> Comments are statements that are not executed by java
+Why would you need to write something that you don't want java to execute?
+I'll tell you why comments are very useful when it comes to programming.
+Comments are used for documenting stuff.
+if you are creating s class or declaring something or if you are writing any logic to execute somthing, you can mention in comments of that particular code is intended to do.
+Imagine like you are working in avery large team, very like you have colleagues and you're working on the same project.So, today, the code that you're writing tomorrow might be edited or changedby someone else from the team.
+there are three types of comments in java
+1. Single line comment -> // single line comment 
+2. Multi line comment -> /* multi line comment */
+3. documentation comment -> /** *documentation */

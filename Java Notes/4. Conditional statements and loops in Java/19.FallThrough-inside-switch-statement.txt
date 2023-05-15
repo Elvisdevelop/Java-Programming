@@ -1,0 +1,21 @@
+Fallthrough inside switch statement in java
+
+What is the fallthrough inside switch statement?
+
+When using switch statement if there is no break in the case statement
+getting executed. Next case statement is executed till a break is
+encountered or the switch statement is terminated. This is known as the
+fallthrough inside switch statement.
+Following are the rules that you are supposed to keep in mind with respect
+to fallthrough inside switch statement in java
+
+● When the variable being used in switch statement is equal to a case,
+the statements following that case will execute until a break
+statement is reached.
+
+● When a break statement is reached, the switch terminates, and the
+flow of control jumps to the next line following the switch statement.
+
+● Break is optional and not every case needs to contain a break. If no
+break appears, the flow of control will fall through to subsequent
+cases until a break is reached.

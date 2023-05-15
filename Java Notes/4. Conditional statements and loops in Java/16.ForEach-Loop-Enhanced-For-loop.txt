@@ -1,0 +1,97 @@
+For each loop (Enhanced For loop)
+
+For each is a special type of for loop designed to traverse through the Array
+objects and collections. Collection framework consists of various data
+structures like List, set, queue, etc.
+
+Syntax :
+
+for(data_type item : collections) {
+}
+
+collection - a collection or array that you have to loop through.
+item - a single item from the collections.
+
+Example of for each loop vs for loop
+
+For loop
+
+int[] a = {10,20,30,40};
+
+for(int i = 0; i < a.length; i++){
+    System.out.println("Value : " + a[i]);
+}
+
+Foreach loop
+
+int[] a = {10,20,30,40};
+
+for(int x : a){
+    System.out.println("Value of x : " + x);
+}
+
+Limitations of for each loop
+
+Limitation 1 :
+
+Foreach loops does not keep track of index
+
+int[] a = {10,20,30,40};
+
+for(int x : a){
+    System.out.println("Value of x : " + x);
+}
+
+You can see in the above example you don’t have access to index.
+
+Limitation 2 :
+
+Foreach loops are not the right choice when you have to modify the
+elements of arrays.
+
+For loop
+int[] a = {10,20,30,40};
+for(int i = 0; i < a.length; i++){
+    a[i] = a[i] + 1;
+    System.out.println("Value : " + a[i]);
+}
+
+You can see with normal for loops you can easily modify the elements of
+the array
+
+Foreach loop
+
+int[] a = {10,20,30,40};
+
+for(int x : a){
+    x = x + 1;
+    System.out.println("Value of x : " + x);
+}
+
+Here in the above example, the array element is not getting modified but
+only the value in variable x is getting modified.
+
+Limitation 3 :
+
+For each loop is the best choice to retrieve the elements of arrays and
+collections. But its limitation is, it is applicable only for arrays and
+collections and it is not a general purpose loop.
+You cannot write equivalent for each loop for below code
+
+for(int i = 0; i<=10; i++){
+    System.out.println("Hello");
+}
+
+Limitation 4 :
+
+By using normal for loop we can print array elements, in original order or
+reverse order. But using foreach loop we can print array elements only in
+original order but not in reverse order.
+
+int[] x = {10,20,30,40,50};
+
+for(int i = x.length-1; i>=0; i--){
+    System.out.println(x[i]);
+}
+
+There is no equivalent foreach loop for this

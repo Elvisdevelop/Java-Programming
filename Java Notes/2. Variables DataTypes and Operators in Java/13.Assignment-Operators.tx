@@ -1,0 +1,13 @@
+Assignment Operators in Java
+
+= : this operator assigns the value on the right hand side to the variable on the left hand side
+
++= : Can be used as a short form of a = a + b; so using this operator we can rewrite the above statement as a += b;
+
+-= : Can be used as a short form of a = a - b; so using this operator we can rewrite the above statement as a -= b;
+
+*= : Can be used as a short form of a = a * b; so using this operator we can rewrite the above statement as a *= b;
+
+/= : Can be used as a short form of a = a / b; so using this operator we can rewrite the above statement as a /= b;
+
+%= : Can be used as a short form of a = a % b; so using this operator we can rewrite the above statement as a %= b;

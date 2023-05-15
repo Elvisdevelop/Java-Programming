@@ -1,0 +1,10 @@
+How Java Works (Computers only understand low-level languages)
+Java is High level Programming Language, But the statements in java are somewhat english-like.
+This is because we as humans can read and understand the source code.
+Whereas on the other hand, computers can only understand and execute low level programming language
+COMPILATION
+-> Process of converting source code from higher level form to machine level form which computers or machine can understand. and its easy for them to execute.
+COMPILER
+-> is an intermidiater which translates the source code from higher level form to machine level form which computers or machine can understand.
+LETS UNDERSTAND HOW JAVA WORKS
+java program (.java file) --compiler--> java bytecode(.class file) --passed on to JVM--> JVM(interpreter) --> Output 

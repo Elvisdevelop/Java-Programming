@@ -1,0 +1,45 @@
+What are Reserved words?
+
+Every language in the world has words that has some predefined meaning.
+Like for example english, has over a million words with predefined
+meanings. 
+Like running, walking, cat, dog. 
+These words have predefined meanings for english language. 
+Similarly, we also have a list of predefined words which represent certain meaning or functionality. 
+These predefined words are known as reserved words in java.
+
+Used keywords breakdown : Total 48
+● Keywords for data types (8 keywords) :
+byte, short, int, long, float, double, boolean, char
+● Keywords for flow control (11 keywords) :
+If, else, switch, case, default, while, do, for, break, continue, return
+● Keywords for modifiers (11 keywords) :
+public, private, protected, static, final, abstract, synchronized, native,
+strictfop, transient, volatile
+● Keywords for exception handling (6 keywords)
+try, catch, finally, throw, throws, assert (v1.4)
+● Class related keywords (6 keywords)
+class, interface, extends, implements, import
+● Object related keywords (4 keywords) :
+new, instanceof, super, this
+● Return type keywords (1 keywords)
+Void
+● Group definition keywords (1 keyword)
+enum
+Unused keywords breakdown : Total 2
+● Goto
+● Const
+Reserved literals : Total 3
+● true
+● false
+● null
+Observations
+● All reserved words in java have only lower case letters
+● In java, we only have the new keyword and not delete keyword. 
+New keyword is used to allocate memory in java. 
+In java, we don’t have the delete keyword since destruction of unused objects is the responsibility of the garbage collector.
+● The following are new keywords in java and were introduced in the
+corresponding versions
+strictfop 1.2 version
+assert 1.4 version
+enum 1.5 version

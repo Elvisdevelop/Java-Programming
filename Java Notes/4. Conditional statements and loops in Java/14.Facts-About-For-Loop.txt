@@ -1,0 +1,102 @@
+Facts about for loop in java - part 1
+
+For loop and curly braces
+
+Curly braces are optional when it comes to for loops in java. However
+without curly braces, you are allowed to have one statement which is not a
+declarative statement.
+
+for(int i = 0; i<10; i++)
+    System.out.println("Hello");
+
+The above code is valid
+
+for(int i = 0; i<10; i++);
+
+The above code is valid
+
+for(int i = 0; i<10; i++)
+    int x = 10;
+
+The above code is invalid
+
+Facts about initialization section in for loop :
+
+This section is executed only once in the life cycle of the for loop. We are
+allowed to declare any number of variables in this section, however they
+should be of the same datatype.
+
+for(int i = 0, j = 0; i<10; i++){
+    System.out.println("Hello");
+}
+
+This is a valid java code
+
+for(int i = 0, int j = 0; i<10; i++){
+    System.out.println("Hello");
+}
+
+This is not a valid java code
+
+for(int i = 0, String s = "Hi"; i<10; i++){
+    System.out.println("Hello");
+}
+
+This is not a valid java code
+
+Initialization section can contain any valid java statement
+
+Example :
+
+for(System.out.println("Hi");; i<10; i++){
+    System.out.println("Hello");
+}
+
+Facts about conditional section in for loop :
+
+This part is optional. If we skip this part then compiler places “true” in its
+place
+
+for(int i = 0; true; i++){
+    System.out.println("Hello");
+}
+
+This is a valid java code
+
+Conditional sections can have expressions however its output should be
+boolean.
+
+for(int i = 0; 20+10; i++){
+    System.out.println("Hello");
+}
+
+This is not a valid code
+
+for(int i = 0; i<10; i++){
+    System.out.println("Hello");
+}
+
+This is a valid java code
+
+Facts about increment or decrement section in for loop :
+Increment decrement section can contain any valid java statement
+
+for(int i = 0; i<10; System.out.println("Hi")){
+    System.out.println("Hello");
+}
+Output →
+Hello
+Hi
+Hello
+Hi
+
+All the parts of java for loop are optional and independent
+
+for(;;) {
+    System.out.println("Hello");
+}
+
+This is a valid java statement
+
+for(;;);
+This is a valid java statement

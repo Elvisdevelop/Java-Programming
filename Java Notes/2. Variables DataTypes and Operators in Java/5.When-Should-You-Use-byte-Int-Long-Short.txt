@@ -1,0 +1,17 @@
+When should you use byte, short, int, long?
+
+When is byte the best choice?
+Byte is the best choice if we want to handle data in terms of streams either from the file or from the network (file supported form or network supported form is byte)
+
+When is short the best choice?
+Short data type is best suitable for 16 bit processors like 8085. 
+But these processors are completely outdated and hence corresponding short data type is also outdated data type.
+
+int is the most commonly used data type.
+
+long data type is used to store integer values that are of much larger type
+than that of int. 
+For example : if you are working on a scientific software and want to calculate the amount of distance travelled by light in 100 days.
+You will need a long to store the value since int may not be enough. 
+In that case, you will use long. However if you are working on a program and need to store a value which is relatively small. 
+You can do away with int.

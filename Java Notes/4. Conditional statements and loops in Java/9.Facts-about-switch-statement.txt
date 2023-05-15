@@ -1,0 +1,64 @@
+Facts about switch statement
+
+Fact 1 : Curly braces are mandatory when you are writing switch statements.
+
+switch(s);
+The above code will give compile time error
+
+switch(s){
+}
+The above code compiles successfully
+
+Hence an empty switch statement is a valid java statement.
+
+Fact 2 : Every case label should be a compile time constant
+
+final int x = 10;
+switch(s){
+    case 1 : {
+    }
+    case x : {
+    }
+}
+The above code compiles successfully
+
+Fact 3 : Both switch arguments and case labels can be expressions. But case label should be constant expressions
+
+int x = 5;
+switch(x+1){
+    case 1 : {
+    }
+    case 3*2 : {
+    }
+}
+The above code compiles successfully
+
+Fact 4 : Independent statements are not allowed inside switch statements.
+
+switch(s){
+    System.out.println("Hello");
+    case 1 :
+        System.out.println("Hello");
+}
+Above is not a valid code switch statement since we are writing an independent statement inside the switch.
+
+Fact 5 : Every case label should be in the range of switch argument type.
+Otherwise we will get a compile time error.
+
+byte b = 5;
+switch(b){
+    case 1 : {
+    }
+    case 999 : {
+    }
+}
+Above case statement is invalid. 999 is out of the range of byte type, hence it's not valid.
+
+Fact 6 : Duplicate case labels are not allowed in switch case statement
+switch(s){
+    case 1 : {
+    }
+    case 1 : {
+    }
+}
+You will get a compile time error for the code above.

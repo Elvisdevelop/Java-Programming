@@ -1,0 +1,34 @@
+                        What are methods in java
+
+What are methods in java?
+
+Collection of java statements that are designed to perform an operation.
+Example of methods : method to find the largest of the 3 numbers, method to add 2 numbers in java. Java has predefined methods : println(), main() method
+By calling println() and passing a string you tell java to print that information on screen. 
+Java has this method somewhere, where it takes care of the steps required to print information on the screen. 
+Programmer using this method doesn’t have to worry about the underlying operations
+
+Syntax :
+
+modifier return-type method-name(<parameter-list>){
+//statements;
+}
+
+modifier : sets the access level for this method and defines from where this method can be accessed
+
+return-type : defines the return type of the method
+
+method-name : the name of the method using which it can be identified
+
+parameters-list : list of parameters which the method accepts
+
+Calling a method
+
+method-name(<parameters-list);
+
+Benefits of methods
+
+Code reusability : promotes code reusability. Since method can be defined once and used at multiple places reducing the code redundancy.
+
+Code readability : Method makes code more readable and easy to understand. 
+addTwoNumbers() tells exactly what operation this method will perform.

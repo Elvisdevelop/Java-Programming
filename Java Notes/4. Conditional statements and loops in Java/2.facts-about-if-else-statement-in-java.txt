@@ -1,0 +1,78 @@
+Facts about if...else statement in java
+
+Lets understand how if...else will behave in certain scenarios with the help of some examples
+
+Example 1
+
+int x = 0;
+
+if(x){
+    System.out.println("Hello world");
+}
+else
+{
+    System.out.println("Hello java");
+}
+
+Above is not a valid program and we will get a compile time error. 
+Since the condition in the if….else statement should always be boolean.
+
+Example 2
+
+int x = 10;
+
+if(x = 20){
+    System.out.println("Hello world");
+}
+else
+{
+    System.out.println("Hello java");
+}
+
+Here we are not using a comparison operator but we are using an assignment operator. 
+After assignment x value is 20. if(20) is a compile time error since it's not boolean. 
+Hence we will get a compile time error above.
+
+Example 3
+
+int x = 10;
+
+if(x == 20){
+    System.out.println("Hello world");
+}
+else
+{
+    System.out.println("Hello java");
+}
+
+Here we will get “Hello java” as output since 10 is not equal to 20. 
+We are using a comparison operator here, hence the output of the expression is boolean.
+
+Example 4
+
+boolean b = true;
+
+if(b = false){
+    System.out.println("Hello world");
+}
+else
+{
+    System.out.println("Hello java");
+}
+
+Since we are using the assignment operator, so b will become false while executing the if statement. 
+Hence for if(false) the output will be “Hi”
+
+Example 5
+
+boolean b = false;
+
+if(b == false){
+    System.out.println("Hello world");
+}
+else
+{
+    System.out.println("Hello java");
+}
+
+Since, here we are using comparison operator the output of the expression in the condition will be “true” and “Hello world” would be printed.

@@ -1,0 +1,29 @@
+What are identifiers in java?
+We have an identifier for everything in the real world around us. 
+If you look around you can see your phone, table, pen, etc. 
+Everything around us hasa name. 
+These names are nothing but identifiers for objects around us.
+These identifiers around us help us identify those things and communicate better. 
+Similarly in java, we have identifiers that are names given to method name, variable name, class name
+Example :
+
+class ABC{
+    public static void main(String args[]){
+        int x = 10;
+    }
+}
+
+There are 5 identifiers in this program above
+a. Class name - ABC
+b. Method name - main()
+c. Predefined class name : String[]
+d. Argument name : args
+e. Integer : x
+
+Rules for naming identifiers
+1. The only allowed characters in java identifiers are a to z, A to Z, 0 to 9, $, _
+2. We can’t use reserved words as identifiers
+3. All predefined java class names and interface names can be used as identifiers
+4. Identifiers cannot start with a digit. Total123 is valid, but 123total is invalid and we will get a compile time error.
+5. Java identifiers are case sensitive since java language is case sensitive programming language
+6. There is no length limit for java identifiers, but it is not recommended to take too lengthy identifiers.

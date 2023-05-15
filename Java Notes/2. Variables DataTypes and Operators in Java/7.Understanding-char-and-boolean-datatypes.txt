@@ -1,0 +1,16 @@
+Understanding char and boolean
+
+Boolean datatype
+Boolean data type can store 2 values : true and false. 
+It can be used in a situation when you want to store flags that keep a track using true or false conditions.
+boolean state = true;
+
+Char datatype
+Char data type can be used to store characters and unicode characters
+char value = ‘C’;
+
+Char data type can also be used to store unicode characters
+char value = ‘U+00A9’ ;
+If you print the value, it will print copyright symbol as output.
+
+You can get list of various unicode character representation here : https://unicode-table.com/en/

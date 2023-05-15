@@ -1,0 +1,53 @@
+Implicit type casting
+
+Let's take a look at this example :
+Do you think this is a valid java program?
+
+class ABC{
+    public static void main(String args[]){
+        byte b = 100;
+        int x = b;
+        System.out.println("Value of x : " + x);
+    }
+}
+
+Yes it is a valid java program. 
+What happened here is internally byte type of value was automatically promoted to int type since we assigned it to int.
+Byte here has a smaller size than that of int. Byte is of 1 byte and int is of 4 bytes. 
+Since the size of target data typ   e is large, we did not get any error on assignment.
+This is known as implicit type casting in java where the value of the smaller data type is assigned and converted to the value of the bigger datatype.
+Implicit type casting is performed when value of smaller data type is assigned to variable of larger data type
+● Implicit type casting is performed by the compiler.
+● Since the range of the smaller data type is within the range of the larger data type, there is no loss of information in this type casting.
+● This is also known as widening or upcasting.
+Possible conversions where implicit type casting is performed
+byte → short → int → long → float → double
+char → int
+
+Example code :
+
+class ABC{
+    public static void main(String args[]){
+        int i = 100;
+        double d = i;
+        System.out.println("Value of d : " + d);
+    }
+}
+
+Output → Value of d : 100.0
+
+Example :
+class ABC{
+    public static void main(String args[]){
+        char c = 'a';
+        int x = c;
+        System.out.println("Value of x : " + x);
+    }
+}
+
+Output → Value of x : 97
+
+Above is a valid code. Here we assigned char to int but the compiler
+converted it into its ascii value of 97.
+x
+Ascii table : http://www.asciitable.com/

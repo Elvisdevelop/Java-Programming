@@ -1,0 +1,69 @@
+Types of assignment statements in java
+
+There are 3 type of assignment statements in java
+1. Simple assignment
+2. Chained assignment
+3. Compound assignment
+
+Lets understand each one of them.
+
+1. Simple assignment
+int x = 10;
+This is an example of simple assignment where in value on right is assigned to variable on left
+int y = x;
+
+We can also have variable on the right side, so the value of variable on right hand side, sits in the variable on left hand side.
+
+2. Chained assignment
+Chained assignment is done to assign single value to multiple variables at one
+
+Example :
+int a, b, c, d;
+a = b = c = d = 200;
+System.out.println(a + "..." + b + "..." + c + "..." + d);
+Output → 200 … 200 … 200 … 200
+
+When using chained assignment keep in mind, you cannot perform chained assignment during declaration
+int a = b = c = d = 200;
+Above is not a valid code
+
+3. Compound assignment
+Whenever we use assignment operator with some other operator to initialize value it is called compound assignment
+
+class ABC{
+    public static void main(String args[]){
+        int a = 30;
+        a += 20;
+        System.out.println("Value of a : " + a);
+    }
+}
+Output → 50
+
+Point to remember about compound assignments
+
+Whenever you use compound assignments, implicit type casting is automatically performed
+
+Scenario 1 :
+
+class ABC{
+    public static void main(String args[]){
+        byte b = 10;
+        b=b+1;
+        System.out.println("Value of b : " + b);
+    }
+}
+You will get a compile time error on executing above code.
+
+Scenario 2 :
+
+class ABC{
+    public static void main(String args[]){
+        byte b = 10;
+        b += 30
+        System.out.println("Value of b : " + b);
+    }
+}
+Output → 40
+
+In case of compound assignment operators, typecasting will be performed automatically.
+So, b += 30 is equivalent to b = (type of b)(b + 30);

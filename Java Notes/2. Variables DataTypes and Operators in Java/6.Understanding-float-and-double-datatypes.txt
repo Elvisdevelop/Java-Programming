@@ -1,0 +1,13 @@
+Understanding float and double data type
+
+Float and double are the datatypes that can be used to store numbers with decimal values.
+
+Representing float and double
+● They can be represented by using f or F. Example float a = 1.23f or float b = 1.23F
+● Double can be represented by using d or D. Example double a = 1.23d or double b = 1.23D
+● By default numbers with decimal values are considered as double, if you want to assign to float you have to explicitly mention that.
+
+Precision values
+● Float preserves decimal values upto 7 precision values
+● Double preserves decimal values upto 16 precision values
+● Double is used in program where you need value with higher precision

@@ -1,0 +1,188 @@
+Facts about while loop in java
+
+Let's take a look at some of the facts about while loop in java
+
+Fact 1
+
+Condition in while loop should always be boolean. You will get compile time error if it's anything other than boolean
+
+while(true){
+
+}
+
+This is a valid while loop
+
+while(1){
+
+}
+while(1.0){
+
+}
+while(-1){
+
+}
+
+The above statements are invalid
+
+Fact 2
+
+Curly braces for while loops are optional. 
+But if they are not used then the while loop can have at most 1 statement and it should not be a declaration.
+
+while(true){
+
+}
+
+This is valid
+
+while(true);
+
+This is valid
+
+while(true)
+int x = 100;
+
+This is not valid
+
+while(true){
+    int x = 100;
+}
+
+This is valid
+
+When should you use the while loop?
+
+While loop is majorly used in scenarios where we don’t know the no. of iterations upfront. Here are some of the scenarios where the while loop is used
+Working with resultset object while working with databases
+
+while(rs.next()){
+
+}
+
+Used with enums to get more elements
+
+while(e.hasMoreElements()){
+
+}
+
+Used to get next elements from iterators
+
+while(itr.hasNext()){
+
+}
+
+Let’s take a look at some of the while loop examples and draw some conclusions from it
+
+Example 1
+
+while(true){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+The above program is invalid
+Reason: this while loop is infinite loop and statement outside loop is unreachable. Hence compile time error.
+
+Example 2
+
+while(false){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+The above program is invalid
+Reason: while loop is never executed and statement inside loop is unreachable. Hence compile time error.
+
+Example 3
+
+int a =10, b =20;
+
+while(a<b){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+The above code is invalid
+Output will be →
+Hello
+Hello
+….
+Infinite times 
+
+Even though this is an infinite loop, we did not get a statement reachable compile time error like we got in the first case above. 
+Because, the compiler does not check if the statement is a valid statement by substituting the values. 
+It just checks that it's an expression which returns boolean value and then leaves for jvm to execute.
+In the first case, it was not an expression but a hardcoded value and hence the compiler caught, but it won’t catch in this case since value of a and b can change during runtime.
+
+Example 4
+
+int a =10, b =20;
+while(a>b){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+This is valid program
+Output → Hi
+
+We did not get a compile time error since it's an expression which returns boolean. 
+Compiler doesn't substitute values to check if a statement evaluates to false. 
+It gives the code a go ahead and hence it compiles fine.
+
+Example 5
+
+final int a =10, b =20;
+while(a<b){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+The above code is invalid
+Compile time error : unreachable statement
+Since the values are declared as final, compiler will substitute and check during compile time, since compiler is aware that those values won’t change and hence it figures out that statement which prints “Hi” won’t be executed ever and the while loop is an infinite loop. 
+Hence it throws a compile time error.
+
+Example 6
+
+final int a =10, b =20;
+while(a>b){
+    System.out.println("Hello");
+}
+System.out.println("Hi");
+
+The above code is invalid
+Compile time error : unreachable statement
+Reason : compiler is aware loop body won't be executed ever since values are declared as final
+
+Things to remember about final variables
+
+Final variables : every final variable will be replaced by the actual value at the time of compilation only. For example
+
+Case 1 :
+final int x = 10;
+int y = 20;
+System.out.println("Value of x : " + x);
+System.out.println("Value of y : " + y);
+
+On compilation :
+
+System.out.println("Value of x : " + 10);
+System.out.println("Value of y : " + y);
+
+Case 2 :
+In case of expressions with final variable : expression is evaluated and code is compiled
+
+final int x = 10;
+int y = 20;
+final int z = 30;
+System.out.println("Value of x : " + x);
+System.out.println("Value of y : " + y);
+System.out.println("Value of x+z : " + (x+z));
+System.out.println("Value of x+y : " + (x+y));
+
+On compilation :
+
+System.out.println("Value of x : " + 10);
+System.out.println("Value of y : " + y);
+System.out.println("Value of x+z : " + 40);
+System.out.println("Value of x+y : " + (10+y));

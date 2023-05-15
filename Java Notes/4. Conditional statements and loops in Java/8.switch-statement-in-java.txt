@@ -1,0 +1,23 @@
+Switch statement in java
+
+Switch case is a statement in java where in java allows you to execute the statement based on certain value in variable or expression.
+
+Syntax :
+
+switch( variable / expression){
+    case value : 
+        //statement
+        break;
+    case value : 
+        //statement
+        break;
+}
+
+Points to remember about switch
+
+● Switch can be used to evaluate value in variable or an expression
+● Break is used to terminate switch once a match statement is executed
+● Statements in default will be executed if not matching case statement is found Rules.
+● Variable in switch statement can only be int, byte, short, char, String, enum, Integer, Byte, Short, Character
+● Case label cannot have a variable, it has to be a constant
+● Case label has to be of the same data type of the variable or expression result in switch parenthesis

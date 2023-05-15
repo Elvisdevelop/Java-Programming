@@ -1,0 +1,25 @@
+Variables in Java
+
+What are variables?
+
+Variables are nothing but containers that holds value for you in the memory during the course of execution of the program.
+
+Variable creation is a two step process :
+1. Declaration
+2. Variable initialization
+
+Variable creation process
+
+1st way :
+Step 1 : Declare the variable
+int firstVariable;
+Step 2 : Initialize the variable
+firstVariable = 10;
+
+2nd way :
+Declaration and initialization combined
+int firstVariable = 10;
+Always keep in mind - variable names have to be unique.
+
+What happens when declaration and initialization statements are executed by java?
+Whenever you declare a variable, java creates a memory block and to store the value of the declared type and when you assign a value to it, that value sits in the memory block just assigned

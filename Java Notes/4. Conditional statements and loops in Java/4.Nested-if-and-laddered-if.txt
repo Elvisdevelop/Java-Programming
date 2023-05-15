@@ -1,0 +1,34 @@
+Nested if and laddered if
+
+Laddered if...else...if
+
+Laddered if...else…if statement is used when there are multiple conditions to test in a single if...else…if
+
+Syntax :
+
+if(condition 1) {
+// Executes when condition 1 is true
+}else if(condition 2) {
+// Executes when condition 2 is true
+}else if(condition 3) {
+// Executes when the condition 3 is true
+}else {
+// Executes when none of the above condition is true.
+}
+
+Nested if...else...if
+
+Nested if...else...if statement is used when you want to use one if...else statement inside another
+
+Syntax :
+
+if(condition 1) {
+// Executes when the condition 1 is true
+if(condition 1_2) {
+// Executes when the condition 1_2 is true
+} else {
+// Executes when the condition 1_2 is false
+}
+}else(condition 2) {
+// Executes when the condition 2 is true
+}

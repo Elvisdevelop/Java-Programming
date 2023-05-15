@@ -1,0 +1,9 @@
+Logical Operators in Java
+
+There are 3 kinds of logical operators in java
+
+&& (and operator) : this operator returns true if both operands are true.
+
+|| (or operator) : this operator returns true if any of the operands are true.
+
+! (not operator) : this operator works with only one operand and reverses the boolean value.

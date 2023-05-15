@@ -1,0 +1,28 @@
+Explicit type casting in java
+
+Do you think below code is a valid java program?
+
+class ABC{
+    public static void main(String args[]){
+        int x = 100;
+        byte b = x;
+        System.out.println("Value of b : " + b);
+    }
+}
+
+Here we are getting an error since we are trying to assign byte which is a smaller data type to int which is larger than byte. 
+Implicit type casting is not performed in this case for the same reason, since there is a possibility of loss of information since larger data type has larger range than that of smaller data type.
+However if we as a programmer are sure that there will be no possible loss of information and value will always be in the range of target data type then we can perform explicit type casting.
+To do explicit typecasting you have to add data type post assignment operator
+byte b = (byte) x;
+
+The above statement will compile successfully. 
+
+Points to remember :
+● Explicit type casting is performed when value of larger data type is assigned to variable of smaller data type
+● Explicit type casting is performed by the programmer.
+● This is also known as narrowing or downcasting.
+
+Possible conversions where implicit type casting is performed
+double → float → long → int → short → byte
+int → char

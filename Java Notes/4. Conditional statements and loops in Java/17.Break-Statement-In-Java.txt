@@ -1,0 +1,18 @@
+Break statement in java
+
+Java offers a break statement which is used to exit a loop. Whenever break
+is encountered, remaining statements in the loop are terminated.
+
+Syntax :
+
+break;
+
+Example:
+
+for (int i = 0 ; i <= 10; i++){
+    if (i == 5){
+        break;
+    }
+    System.out.println(i);
+}
+System.out.println("Outside The For Loop");

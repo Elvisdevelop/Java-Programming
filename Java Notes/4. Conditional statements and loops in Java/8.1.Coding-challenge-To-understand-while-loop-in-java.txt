@@ -1,0 +1,36 @@
+write a java to accept integer from user and print the factorial of the number using while loop.
+
+What is a factorial number?
+is the product of an integer and all the integers below it.
+
+Example:
+Factorial of 5 (5!) = 5 * 4 * 3 * 2 * 1 = 120
+Factorial of 10 (10!) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 40320
+
+sample Input -> 5
+sample Output -> 120
+
+sample Input 1 -> 10
+sample Output -> 40320
+
+Solution:
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main (String[] args){
+        System.out.println("Enter the number whise Factorial is to be calculated: ");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int factorial = 1;
+        int i = 1;
+
+        while(i >= a){
+            factorial = factorial + 1;
+            i++;
+        }
+
+        System.out.println("Factorial for " + a + " is: " + factorial);
+        
+    }
+}

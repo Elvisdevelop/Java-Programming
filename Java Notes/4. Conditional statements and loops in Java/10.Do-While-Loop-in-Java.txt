@@ -1,0 +1,13 @@
+Do while loop in java
+
+Syntax for do while loop :
+
+do {
+    //code to be executed until the condition is met
+} while(condition);
+
+Points to remember
+
+● Do while loop is always executed at least once
+● After the execution of statement in do while loop once, condition is evaluated and if true next iteration is done.
+● Once the condition is false, the loop is terminated
